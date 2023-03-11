@@ -1,0 +1,80 @@
+ 2022-12-24 12:43:22.087 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-24 12:43:22.124 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-24 12:43:22.129 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-24 12:43:22.130 +01:00 [] Hosting environment: Development
+ 2022-12-24 12:43:22.130 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-24 12:43:24.024 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-24 12:43:24.481 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 459.7922ms
+ 2022-12-24 12:43:24.510 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-24 12:43:24.519 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.6741ms
+ 2022-12-24 12:43:24.723 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-24 12:43:24.826 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.7303ms
+ 2022-12-24 12:43:24.931 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-24 12:43:25.144 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 213.4332ms
+ 2022-12-24 12:43:30.289 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies - -
+ 2022-12-24 12:43:30.297 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-24 12:43:30.311 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2022-12-24 12:48:51.595 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-24 12:48:51.646 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-24 12:48:51.650 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-24 12:48:51.651 +01:00 [] Hosting environment: Development
+ 2022-12-24 12:48:51.651 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-24 12:48:53.289 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-24 12:48:54.585 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1300.2342ms
+ 2022-12-24 12:48:54.899 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-24 12:48:54.926 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 26.9660ms
+ 2022-12-24 12:48:55.415 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-24 12:48:55.736 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 321.0797ms
+ 2022-12-24 12:48:55.903 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-24 12:48:56.061 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.6684ms
+ 2022-12-24 12:49:00.782 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies - -
+ 2022-12-24 12:49:00.792 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-24 12:49:00.810 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2022-12-24 12:50:42.384 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-24 12:50:42.427 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-24 12:50:42.430 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-24 12:50:42.431 +01:00 [] Hosting environment: Development
+ 2022-12-24 12:50:42.431 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-24 12:50:43.642 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-24 12:50:44.058 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 420.5047ms
+ 2022-12-24 12:50:44.123 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-24 12:50:44.139 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 15.9502ms
+ 2022-12-24 12:50:44.265 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-24 12:50:44.336 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.8360ms
+ 2022-12-24 12:50:44.516 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-24 12:50:44.677 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.8934ms
+ 2022-12-24 12:50:49.057 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies - -
+ 2022-12-24 12:50:49.070 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-24 12:50:49.100 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2022-12-24 15:42:19.539 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-24 15:42:19.606 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-24 15:42:19.610 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-24 15:42:19.610 +01:00 [] Hosting environment: Development
+ 2022-12-24 15:42:19.611 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-24 15:42:20.483 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-24 15:42:20.947 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 468.3830ms
+ 2022-12-24 15:42:20.988 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-24 15:42:20.994 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.5218ms
+ 2022-12-24 15:42:21.192 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-24 15:42:21.362 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 169.6450ms
+ 2022-12-24 15:42:21.465 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-24 15:42:21.605 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.8146ms
+ 2022-12-24 15:42:31.242 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies - -
+ 2022-12-24 15:42:31.250 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-24 15:42:31.266 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2022-12-24 16:49:29.452 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-24 16:49:29.500 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-24 16:49:29.502 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-24 16:49:29.503 +01:00 [] Hosting environment: Development
+ 2022-12-24 16:49:29.503 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-24 16:49:30.862 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-24 16:49:31.476 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 616.0795ms
+ 2022-12-24 16:49:31.606 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-24 16:49:31.615 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.2535ms
+ 2022-12-24 16:49:31.797 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-24 16:49:32.023 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 226.3982ms
+ 2022-12-24 16:49:32.121 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-24 16:49:32.275 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.5453ms
+ 2022-12-24 16:49:36.931 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies - -
+ 2022-12-24 16:49:36.944 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-24 16:49:36.970 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).

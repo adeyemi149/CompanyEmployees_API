@@ -1,0 +1,35 @@
+ 2022-12-31 13:54:50.301 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-31 13:54:50.402 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/index.html - -
+ 2022-12-31 13:54:50.407 +01:00 [] Hosting environment: Development
+ 2022-12-31 13:54:50.407 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-31 13:54:50.797 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/index.html - - - 200 - text/html;charset=utf-8 399.9627ms
+ 2022-12-31 13:54:50.826 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-31 13:54:50.835 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.7528ms
+ 2022-12-31 13:54:51.028 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+ 2022-12-31 13:54:51.113 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.1982ms
+ 2022-12-31 13:54:51.275 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/v1/swagger.json - -
+ 2022-12-31 13:54:51.443 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.3373ms
+ 2022-12-31 13:54:56.033 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/api/companies - -
+ 2022-12-31 13:54:56.054 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2022-12-31 13:54:56.080 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2022-12-31 13:54:57.839 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2022-12-31 13:55:00.070 +01:00 [] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2022-12-31 13:55:00.121 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2022-12-31 13:55:00.159 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 4072.7051ms
+ 2022-12-31 13:55:00.160 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2022-12-31 13:55:00.168 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/api/companies - - - 200 - application/json;+charset=utf-8 4134.8233ms
+ 2022-12-31 13:55:14.199 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/api/employees - -
+ 2022-12-31 13:55:14.206 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation)'
+ 2022-12-31 13:55:14.219 +01:00 [] Route matched with {action = "getEmployees", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getEmployees() on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2022-12-31 13:55:27.227 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2022-12-31 13:55:30.574 +01:00 [] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+ORDER BY [e].[Name]
+ 2022-12-31 13:55:53.419 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[tutorial.Entities.Models.Employee, tutorial.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2022-12-31 13:55:53.629 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation) in 39409.885ms
+ 2022-12-31 13:55:53.629 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation)'
+ 2022-12-31 13:55:53.630 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/api/employees - - - 200 - application/json;+charset=utf-8 39430.9743ms

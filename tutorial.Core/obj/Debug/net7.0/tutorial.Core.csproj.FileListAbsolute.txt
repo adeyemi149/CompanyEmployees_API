@@ -1,0 +1,14 @@
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Core.deps.json
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Core.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Core.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\refint\tutorial.Core.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\ref\tutorial.Core.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Core.runtimeconfig.json
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Core.genruntimeconfig.cache

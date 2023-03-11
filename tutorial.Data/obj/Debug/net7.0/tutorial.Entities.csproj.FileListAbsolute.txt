@@ -1,0 +1,12 @@
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\bin\Debug\net7.0\tutorial.Entities.deps.json
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\bin\Debug\net7.0\tutorial.Entities.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\bin\Debug\net7.0\tutorial.Entities.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\tutorial.Entities.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\tutorial.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\tutorial.Entities.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\tutorial.Entities.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\tutorial.Entities.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\tutorial.Entities.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\refint\tutorial.Entities.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\tutorial.Entities.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Data\obj\Debug\net7.0\ref\tutorial.Entities.dll

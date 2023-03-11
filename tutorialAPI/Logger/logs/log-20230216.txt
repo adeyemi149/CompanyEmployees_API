@@ -1,0 +1,208 @@
+ 2023-02-16 13:32:04.827 +01:00 [] Now listening on: https://localhost:7087
+ 2023-02-16 13:32:04.873 +01:00 [] Now listening on: http://localhost:5291
+ 2023-02-16 13:32:04.875 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-02-16 13:32:04.876 +01:00 [] Hosting environment: Development
+ 2023-02-16 13:32:04.876 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-02-16 13:32:06.094 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger - -
+ 2023-02-16 13:32:06.263 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger - - - 301 0 - 173.5609ms
+ 2023-02-16 13:32:06.312 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-02-16 13:32:06.702 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 390.2692ms
+ 2023-02-16 13:32:06.720 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - -
+ 2023-02-16 13:32:06.729 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - -
+ 2023-02-16 13:32:06.729 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - -
+ 2023-02-16 13:32:06.738 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-02-16 13:32:06.763 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 24.4761ms
+ 2023-02-16 13:32:06.783 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2023-02-16 13:32:06.783 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2023-02-16 13:32:06.784 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - - - 200 143632 text/css 63.3400ms
+ 2023-02-16 13:32:06.784 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 54.6338ms
+ 2023-02-16 13:32:06.823 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2023-02-16 13:32:06.824 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 94.6275ms
+ 2023-02-16 13:32:06.985 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-02-16 13:32:07.255 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 269.0680ms
+ 2023-02-16 13:32:07.408 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - -
+ 2023-02-16 13:32:07.409 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2023-02-16 13:32:07.409 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - - - 200 628 image/png 1.3624ms
+ 2023-02-16 13:32:07.539 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-02-16 13:32:07.882 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 342.9134ms
+ 2023-02-16 13:34:20.622 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?searchTerm=Martha%20Grown - -
+ 2023-02-16 13:34:20.632 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:34:20.699 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-02-16 13:34:22.516 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-02-16 13:34:24.146 +01:00 [] Executed DbCommand (79ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-02-16 13:34:24.358 +01:00 [] Executed DbCommand (112ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCase_3='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE (([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))) AND ((@__lowerCase_3 LIKE N'') OR (CHARINDEX(@__lowerCase_3, LOWER([e].[Name])) > 0))
+ORDER BY [e].[Name]
+ 2023-02-16 13:34:24.389 +01:00 [] Executed DbCommand (15ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-02-16 13:34:24.422 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.EmployeeDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-02-16 13:34:24.451 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation) in 3744.4943ms
+ 2023-02-16 13:34:24.452 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:34:24.459 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?searchTerm=Martha%20Grown - - - 200 - application/json;+charset=utf-8 3836.5277ms
+ 2023-02-16 13:34:36.486 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?searchTerm= - -
+ 2023-02-16 13:34:36.487 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:34:36.488 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-02-16 13:34:36.574 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-02-16 13:34:36.584 +01:00 [] Executed DbCommand (4ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-02-16 13:34:36.592 +01:00 [] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))
+ORDER BY [e].[Name]
+ 2023-02-16 13:34:36.595 +01:00 [] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-02-16 13:34:36.596 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.EmployeeDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-02-16 13:34:36.597 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation) in 109.1235ms
+ 2023-02-16 13:34:36.597 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:34:36.597 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?searchTerm= - - - 200 - application/json;+charset=utf-8 111.2578ms
+ 2023-02-16 13:36:23.693 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?pageNumber=1&pageSize=4&minAge=26&maxAge=30&searchTerm=Ma - -
+ 2023-02-16 13:36:23.695 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:36:23.695 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-02-16 13:36:23.714 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-02-16 13:36:23.750 +01:00 [] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-02-16 13:36:23.758 +01:00 [] Executed DbCommand (5ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCase_3='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE (([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))) AND ((@__lowerCase_3 LIKE N'') OR (CHARINDEX(@__lowerCase_3, LOWER([e].[Name])) > 0))
+ORDER BY [e].[Name]
+ 2023-02-16 13:36:23.761 +01:00 [] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-02-16 13:36:23.762 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.EmployeeDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-02-16 13:36:23.762 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation) in 66.8671ms
+ 2023-02-16 13:36:23.762 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:36:23.762 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?pageNumber=1&pageSize=4&minAge=26&maxAge=30&searchTerm=Ma - - - 200 - application/json;+charset=utf-8 69.3762ms
+ 2023-02-16 13:36:32.139 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?pageNumber=1&pageSize=4&minAge=26&maxAge=30&searchTerm=Gr - -
+ 2023-02-16 13:36:32.139 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:36:32.139 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-02-16 13:36:32.140 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-02-16 13:36:32.143 +01:00 [] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-02-16 13:36:32.177 +01:00 [] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCase_3='?' (Size = 30)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE (([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))) AND ((@__lowerCase_3 LIKE N'') OR (CHARINDEX(@__lowerCase_3, LOWER([e].[Name])) > 0))
+ORDER BY [e].[Name]
+ 2023-02-16 13:36:32.178 +01:00 [] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-02-16 13:36:32.180 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.EmployeeDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-02-16 13:36:32.180 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation) in 41.1863ms
+ 2023-02-16 13:36:32.181 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 13:36:32.181 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?pageNumber=1&pageSize=4&minAge=26&maxAge=30&searchTerm=Gr - - - 200 - application/json;+charset=utf-8 41.9064ms
+ 2023-02-16 13:40:59.361 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 83
+ 2023-02-16 13:40:59.361 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-02-16 13:40:59.366 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-02-16 13:40:59.390 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-02-16 13:40:59.410 +01:00 [] Executed DbCommand (7ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-02-16 13:40:59.597 +01:00 [] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+ 2023-02-16 13:40:59.626 +01:00 [] Executing CreatedAtRouteResult, writing value of type 'Shared.DataTransferObject.EmployeeDto'.
+ 2023-02-16 13:40:59.664 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 297.8681ms
+ 2023-02-16 13:40:59.664 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-02-16 13:40:59.664 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 83 - 201 - application/json;+charset=utf-8 304.7961ms
+ 2023-02-16 14:11:42.657 +01:00 [] Now listening on: https://localhost:7087
+ 2023-02-16 14:11:42.919 +01:00 [] Now listening on: http://localhost:5291
+ 2023-02-16 14:11:42.921 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-02-16 14:11:42.921 +01:00 [] Hosting environment: Development
+ 2023-02-16 14:11:42.921 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-02-16 14:11:43.981 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-02-16 14:11:44.403 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 425.1719ms
+ 2023-02-16 14:11:44.443 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-02-16 14:11:44.452 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.4088ms
+ 2023-02-16 14:11:45.126 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-02-16 14:11:45.200 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.7619ms
+ 2023-02-16 14:11:45.262 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-02-16 14:11:45.583 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 321.6648ms
+ 2023-02-16 14:13:10.720 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?orderBy=name,age%20desc - -
+ 2023-02-16 14:13:10.729 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 14:13:10.786 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-02-16 14:13:12.519 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-02-16 14:13:13.975 +01:00 [] Executed DbCommand (68ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-02-16 14:13:14.061 +01:00 [] Executed DbCommand (10ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))
+ORDER BY [e].[Name]
+ 2023-02-16 14:13:14.084 +01:00 [] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-02-16 14:13:14.115 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.EmployeeDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-02-16 14:13:14.136 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation) in 3345.8089ms
+ 2023-02-16 14:13:14.137 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 14:13:14.141 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?orderBy=name,age%20desc - - - 200 - application/json;+charset=utf-8 3421.7551ms
+ 2023-02-16 14:57:06.857 +01:00 [] Now listening on: https://localhost:7087
+ 2023-02-16 14:57:06.907 +01:00 [] Now listening on: http://localhost:5291
+ 2023-02-16 14:57:06.911 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-02-16 14:57:06.911 +01:00 [] Hosting environment: Development
+ 2023-02-16 14:57:06.911 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-02-16 14:57:08.282 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-02-16 14:57:08.845 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 570.3389ms
+ 2023-02-16 14:57:09.130 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-02-16 14:57:09.141 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.7395ms
+ 2023-02-16 14:57:09.185 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-02-16 14:57:09.263 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.0093ms
+ 2023-02-16 14:57:09.460 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-02-16 14:57:09.797 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 336.5980ms
+ 2023-02-16 15:12:40.690 +01:00 [] Now listening on: https://localhost:7087
+ 2023-02-16 15:12:40.737 +01:00 [] Now listening on: http://localhost:5291
+ 2023-02-16 15:12:40.739 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-02-16 15:12:40.739 +01:00 [] Hosting environment: Development
+ 2023-02-16 15:12:40.739 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-02-16 15:12:41.753 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-02-16 15:12:42.234 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 488.2371ms
+ 2023-02-16 15:12:42.269 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-02-16 15:12:42.281 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.5157ms
+ 2023-02-16 15:12:42.515 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-02-16 15:12:42.616 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 101.1687ms
+ 2023-02-16 15:12:42.771 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-02-16 15:12:43.088 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 316.3350ms
+ 2023-02-16 15:13:34.693 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?orderBy=name,age%20desc - -
+ 2023-02-16 15:13:34.703 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 15:13:34.788 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-02-16 15:13:36.874 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-02-16 15:13:38.521 +01:00 [] Executed DbCommand (77ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-02-16 15:13:43.094 +01:00 [] Executed DbCommand (12ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))
+ORDER BY [e].[Name], [e].[Age] DESC
+ 2023-02-16 15:13:43.118 +01:00 [] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-02-16 15:13:43.159 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.EmployeeDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-02-16 15:13:43.190 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation) in 8394.9873ms
+ 2023-02-16 15:13:43.192 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (tutorial.presentation)'
+ 2023-02-16 15:13:43.200 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?orderBy=name,age%20desc - - - 200 - application/json;+charset=utf-8 8506.9591ms

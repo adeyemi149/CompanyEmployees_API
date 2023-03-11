@@ -1,0 +1,846 @@
+ 2023-01-03 16:39:45.225 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 16:39:45.264 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 16:39:45.264 +01:00 [] Hosting environment: Development
+ 2023-01-03 16:39:45.265 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 16:39:46.412 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger - -
+ 2023-01-03 16:39:46.600 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger - - - 301 0 - 194.5588ms
+ 2023-01-03 16:39:46.608 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2023-01-03 16:39:46.944 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 335.4008ms
+ 2023-01-03 16:39:46.965 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui.css - -
+ 2023-01-03 16:39:46.974 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-bundle.js - -
+ 2023-01-03 16:39:46.974 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 16:39:46.974 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-standalone-preset.js - -
+ 2023-01-03 16:39:46.977 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 2.6015ms
+ 2023-01-03 16:39:47.015 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2023-01-03 16:39:47.015 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2023-01-03 16:39:47.015 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 41.8802ms
+ 2023-01-03 16:39:47.015 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui.css - - - 200 143632 text/css 50.5455ms
+ 2023-01-03 16:39:47.028 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2023-01-03 16:39:47.028 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 54.9508ms
+ 2023-01-03 16:39:47.170 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2023-01-03 16:39:47.224 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.8007ms
+ 2023-01-03 16:39:47.567 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/favicon-32x32.png - -
+ 2023-01-03 16:39:47.567 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2023-01-03 16:39:47.567 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/favicon-32x32.png - - - 200 628 image/png 0.7067ms
+ 2023-01-03 16:39:47.649 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2023-01-03 16:39:47.770 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.2859ms
+ 2023-01-03 16:39:55.663 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/api/companies - -
+ 2023-01-03 16:39:55.671 +01:00 [] Failed to determine the https port for redirect.
+ 2023-01-03 16:39:55.679 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 16:39:55.707 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 16:39:57.880 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 16:40:00.211 +01:00 [] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-03 16:40:00.269 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-01-03 16:40:00.304 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 4590.8847ms
+ 2023-01-03 16:40:00.305 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 16:40:00.312 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/api/companies - - - 200 - application/json;+charset=utf-8 4648.4713ms
+ 2023-01-03 16:40:15.155 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/api/employees - -
+ 2023-01-03 16:40:15.157 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation)'
+ 2023-01-03 16:40:15.161 +01:00 [] Route matched with {action = "getEmployees", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getEmployees() on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-03 16:40:15.272 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 16:40:15.298 +01:00 [] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+ORDER BY [e].[Name]
+ 2023-01-03 16:40:15.300 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[tutorial.Entities.Models.Employee, tutorial.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-01-03 16:40:15.306 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation) in 145.2187ms
+ 2023-01-03 16:40:15.306 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation)'
+ 2023-01-03 16:40:15.307 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/api/employees - - - 200 - application/json;+charset=utf-8 152.4040ms
+ 2023-01-03 16:41:51.725 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 16:41:51.804 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 16:41:51.805 +01:00 [] Hosting environment: Development
+ 2023-01-03 16:41:51.805 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 16:41:52.633 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2023-01-03 16:41:53.031 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 401.2304ms
+ 2023-01-03 16:41:53.056 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 16:41:53.060 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.2586ms
+ 2023-01-03 16:41:53.210 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2023-01-03 16:41:53.265 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.9264ms
+ 2023-01-03 16:41:53.680 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2023-01-03 16:41:53.801 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.5609ms
+ 2023-01-03 16:42:00.630 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/api/companies - -
+ 2023-01-03 16:42:00.643 +01:00 [] Failed to determine the https port for redirect.
+ 2023-01-03 16:42:00.651 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 16:42:00.674 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 16:42:02.187 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 16:42:03.151 +01:00 [] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-03 16:42:03.207 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-01-03 16:42:03.235 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 2556.4327ms
+ 2023-01-03 16:42:03.236 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 16:42:03.241 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/api/companies - - - 200 - application/json;+charset=utf-8 2611.0375ms
+ 2023-01-03 17:16:42.473 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 17:16:42.513 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 17:16:42.514 +01:00 [] Hosting environment: Development
+ 2023-01-03 17:16:42.514 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 17:16:43.626 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2023-01-03 17:16:44.122 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 505.0726ms
+ 2023-01-03 17:16:44.151 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 17:16:44.158 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.6535ms
+ 2023-01-03 17:16:44.395 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2023-01-03 17:16:44.461 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.4278ms
+ 2023-01-03 17:16:44.649 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2023-01-03 17:16:44.817 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.6659ms
+ 2023-01-03 17:16:51.406 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/api/companies - -
+ 2023-01-03 17:16:51.426 +01:00 [] Failed to determine the https port for redirect.
+ 2023-01-03 17:16:51.437 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:16:51.475 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 17:16:53.731 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 17:16:55.103 +01:00 [] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-03 17:16:55.486 +01:00 [] Something went wrong in the GetAllCompanies service method AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[tutorial.Entities.Models.Company, tutorial.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> System.ArgumentException: Shared.DataTransferObject.CompanyDto needs to have a constructor with 0 args or only optional args. Validate your configuration for details. (Parameter 'type')
+   at lambda_method27(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method27(Closure, Object, IEnumerable`1, ResolutionContext)
+   at Services.CompanyService.GetAllCompanies(Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 30
+ 2023-01-03 17:16:55.573 +01:00 [] Executing ObjectResult, writing value of type 'System.String'.
+ 2023-01-03 17:16:55.583 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 4101.2472ms
+ 2023-01-03 17:16:55.584 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:16:55.593 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/api/companies - - - 500 - text/plain;+charset=utf-8 4186.4325ms
+ 2023-01-03 17:17:26.990 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 17:17:27.032 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 17:17:27.033 +01:00 [] Hosting environment: Development
+ 2023-01-03 17:17:27.033 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 17:17:27.919 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2023-01-03 17:17:28.415 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 500.3411ms
+ 2023-01-03 17:17:28.446 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 17:17:28.454 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.9004ms
+ 2023-01-03 17:17:28.627 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2023-01-03 17:17:28.747 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 120.1429ms
+ 2023-01-03 17:17:28.945 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2023-01-03 17:17:29.110 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.1246ms
+ 2023-01-03 17:17:47.325 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 17:17:47.362 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 17:17:47.363 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 17:17:47.364 +01:00 [] Hosting environment: Development
+ 2023-01-03 17:17:47.364 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 17:17:48.583 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger - -
+ 2023-01-03 17:17:48.734 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger - - - 301 0 - 154.6555ms
+ 2023-01-03 17:17:48.776 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 17:17:49.077 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 300.7036ms
+ 2023-01-03 17:17:49.105 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - -
+ 2023-01-03 17:17:49.107 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - -
+ 2023-01-03 17:17:49.107 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - -
+ 2023-01-03 17:17:49.108 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 17:17:49.134 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 25.7151ms
+ 2023-01-03 17:17:49.238 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2023-01-03 17:17:49.238 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - - - 200 143632 text/css 133.7440ms
+ 2023-01-03 17:17:49.244 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2023-01-03 17:17:49.245 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 137.9121ms
+ 2023-01-03 17:17:49.269 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2023-01-03 17:17:49.270 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 162.7463ms
+ 2023-01-03 17:17:49.350 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 17:17:49.433 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.3694ms
+ 2023-01-03 17:17:49.682 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - -
+ 2023-01-03 17:17:49.682 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2023-01-03 17:17:49.683 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - - - 200 628 image/png 0.8151ms
+ 2023-01-03 17:17:49.751 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 17:17:49.913 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.5250ms
+ 2023-01-03 17:19:34.912 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/employees - -
+ 2023-01-03 17:19:34.932 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation)'
+ 2023-01-03 17:19:34.968 +01:00 [] Route matched with {action = "getEmployees", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getEmployees() on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-03 17:19:36.887 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 17:19:38.122 +01:00 [] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+ORDER BY [e].[Name]
+ 2023-01-03 17:19:38.174 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[tutorial.Entities.Models.Employee, tutorial.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-01-03 17:19:38.231 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation) in 3256.5809ms
+ 2023-01-03 17:19:38.232 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.getEmployees (tutorial.presentation)'
+ 2023-01-03 17:19:38.242 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/employees - - - 200 - application/json;+charset=utf-8 3330.4878ms
+ 2023-01-03 17:19:51.106 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies - -
+ 2023-01-03 17:19:51.108 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:19:51.115 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 17:19:51.222 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 17:19:51.253 +01:00 [] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-03 17:19:51.618 +01:00 [] Something went wrong in the GetAllCompanies service method AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[tutorial.Entities.Models.Company, tutorial.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> System.ArgumentException: Shared.DataTransferObject.CompanyDto needs to have a constructor with 0 args or only optional args. Validate your configuration for details. (Parameter 'type')
+   at lambda_method31(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method31(Closure, Object, IEnumerable`1, ResolutionContext)
+   at Services.CompanyService.GetAllCompanies(Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 30
+ 2023-01-03 17:19:51.695 +01:00 [] Executing ObjectResult, writing value of type 'System.String'.
+ 2023-01-03 17:19:51.697 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 581.7696ms
+ 2023-01-03 17:19:51.697 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:19:51.697 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies - - - 500 - text/plain;+charset=utf-8 591.3640ms
+ 2023-01-03 17:21:31.085 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 17:21:31.126 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 17:21:31.129 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 17:21:31.130 +01:00 [] Hosting environment: Development
+ 2023-01-03 17:21:31.130 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 17:21:31.868 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 17:21:32.381 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 517.1529ms
+ 2023-01-03 17:21:32.603 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 17:21:32.611 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.8370ms
+ 2023-01-03 17:21:32.657 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 17:21:32.736 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.6584ms
+ 2023-01-03 17:21:33.207 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 17:21:33.354 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.7618ms
+ 2023-01-03 17:21:34.991 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies - -
+ 2023-01-03 17:21:35.002 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:21:35.020 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 17:21:36.192 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 17:21:36.932 +01:00 [] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-03 17:21:37.018 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-01-03 17:21:37.062 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 2035.1531ms
+ 2023-01-03 17:21:37.062 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:21:37.068 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies - - - 200 - application/json;+charset=utf-8 2076.7300ms
+ 2023-01-03 17:49:45.051 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 17:49:45.086 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 17:49:45.088 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 17:49:45.088 +01:00 [] Hosting environment: Development
+ 2023-01-03 17:49:45.088 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 17:49:46.035 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 17:49:46.424 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 391.8859ms
+ 2023-01-03 17:49:46.452 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 17:49:46.458 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.2816ms
+ 2023-01-03 17:49:46.588 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 17:49:46.668 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.1974ms
+ 2023-01-03 17:49:46.784 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 17:49:46.918 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.1087ms
+ 2023-01-03 17:49:53.295 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies - -
+ 2023-01-03 17:49:53.314 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:49:53.337 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 17:50:31.074 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 17:50:31.152 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 17:50:31.167 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 17:50:31.167 +01:00 [] Hosting environment: Development
+ 2023-01-03 17:50:31.168 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 17:50:31.877 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 17:50:32.394 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 520.2218ms
+ 2023-01-03 17:50:32.426 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 17:50:32.437 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.1020ms
+ 2023-01-03 17:50:32.649 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 17:50:32.757 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.8982ms
+ 2023-01-03 17:50:32.873 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 17:50:33.023 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.7650ms
+ 2023-01-03 17:50:47.157 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies - -
+ 2023-01-03 17:50:47.166 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:50:47.179 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 17:50:56.677 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 9492.0768ms
+ 2023-01-03 17:50:56.680 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-03 17:50:56.684 +01:00 [] An unhandled exception has occurred while executing the request.
+System.Exception: Exception
+   at tutorial.presentation.Controllers.CompaniesController.getCompanies() in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 22
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 17:50:56.763 +01:00 [] Something went wrong: System.Exception: Exception
+   at tutorial.presentation.Controllers.CompaniesController.getCompanies() in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 22
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 17:50:56.782 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies - - - 500 - application/json 9625.3088ms
+ 2023-01-03 19:10:03.991 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 19:10:04.032 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 19:10:04.035 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 19:10:04.035 +01:00 [] Hosting environment: Development
+ 2023-01-03 19:10:04.035 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 19:10:05.483 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger - -
+ 2023-01-03 19:10:05.623 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger - - - 301 0 - 144.2439ms
+ 2023-01-03 19:10:05.661 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 19:10:06.090 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 429.0115ms
+ 2023-01-03 19:10:06.124 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - -
+ 2023-01-03 19:10:06.128 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - -
+ 2023-01-03 19:10:06.129 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - -
+ 2023-01-03 19:10:06.131 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 19:10:06.149 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 19.8737ms
+ 2023-01-03 19:10:06.188 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2023-01-03 19:10:06.188 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2023-01-03 19:10:06.189 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - - - 200 143632 text/css 64.8409ms
+ 2023-01-03 19:10:06.189 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 60.4999ms
+ 2023-01-03 19:10:06.210 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2023-01-03 19:10:06.210 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 81.8978ms
+ 2023-01-03 19:10:06.365 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 19:10:06.500 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 134.7963ms
+ 2023-01-03 19:10:06.658 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - -
+ 2023-01-03 19:10:06.659 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2023-01-03 19:10:06.659 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - - - 200 628 image/png 0.8440ms
+ 2023-01-03 19:10:06.717 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 19:10:06.769 +01:00 [] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/companies" for actions - tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation),tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-01-03 19:10:06.825 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 108.1422ms
+ 2023-01-03 19:11:07.245 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 19:11:07.300 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 19:11:07.304 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 19:11:07.304 +01:00 [] Hosting environment: Development
+ 2023-01-03 19:11:07.304 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 19:11:07.819 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 19:11:08.117 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 300.5006ms
+ 2023-01-03 19:11:08.141 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 19:11:08.149 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.4282ms
+ 2023-01-03 19:11:08.249 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 19:11:08.317 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.4031ms
+ 2023-01-03 19:11:08.569 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 19:11:08.707 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.7494ms
+ 2023-01-03 19:13:38.939 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - -
+ 2023-01-03 19:13:38.954 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:13:38.999 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:13:40.199 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:13:41.382 +01:00 [] Executed DbCommand (32ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:13:41.418 +01:00 [] Executing OkObjectResult, writing value of type 'Shared.DataTransferObject.CompanyDto'.
+ 2023-01-03 19:13:41.436 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 2432.81ms
+ 2023-01-03 19:13:41.437 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:13:41.442 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - - - 200 - application/json;+charset=utf-8 2502.6346ms
+ 2023-01-03 19:44:28.673 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 19:44:28.728 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 19:44:28.732 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 19:44:28.733 +01:00 [] Hosting environment: Development
+ 2023-01-03 19:44:28.733 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 19:44:29.692 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 19:44:30.270 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 583.1915ms
+ 2023-01-03 19:44:30.307 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 19:44:30.316 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.0519ms
+ 2023-01-03 19:44:30.504 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 19:44:30.673 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 168.3259ms
+ 2023-01-03 19:44:30.780 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 19:44:31.142 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 362.3849ms
+ 2023-01-03 19:44:41.600 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - -
+ 2023-01-03 19:44:41.614 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:44:41.673 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:44:43.685 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:44:45.025 +01:00 [] Executed DbCommand (58ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:44:45.099 +01:00 [] Executing OkObjectResult, writing value of type 'Shared.DataTransferObject.CompanyDto'.
+ 2023-01-03 19:44:45.140 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 3458.6983ms
+ 2023-01-03 19:44:45.140 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:44:45.152 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - - - 200 - application/json;+charset=utf-8 3551.7608ms
+ 2023-01-03 19:44:54.859 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC18-2D54A9991870 - -
+ 2023-01-03 19:44:54.861 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:44:54.861 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:44:54.959 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:44:54.977 +01:00 [] Executed DbCommand (5ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:45:03.070 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 8208.0635ms
+ 2023-01-03 19:45:03.076 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:45:03.086 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc18-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:45:12.589 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc18-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:45:21.376 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC18-2D54A9991870 - - - 404 - application/json 26516.8478ms
+ 2023-01-03 19:46:02.161 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC72-2D54A9991870 - -
+ 2023-01-03 19:46:02.193 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:46:02.194 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:46:02.215 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:46:02.219 +01:00 [] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:46:09.479 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 7284.488ms
+ 2023-01-03 19:46:09.489 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:46:09.498 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc72-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:47:10.802 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc72-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:47:49.834 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC72-2D54A9991870 - - - 404 - application/json 107672.7333ms
+ 2023-01-03 19:48:32.104 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 19:48:32.133 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 19:48:32.135 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 19:48:32.136 +01:00 [] Hosting environment: Development
+ 2023-01-03 19:48:32.136 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 19:48:33.097 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 19:48:33.455 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 362.1518ms
+ 2023-01-03 19:48:33.478 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 19:48:33.485 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.3367ms
+ 2023-01-03 19:48:33.652 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 19:48:33.737 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.2987ms
+ 2023-01-03 19:48:33.894 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 19:48:34.109 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.9042ms
+ 2023-01-03 19:49:04.628 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410Q-BC78-2D54A9991870 - -
+ 2023-01-03 19:49:04.651 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410Q-BC78-2D54A9991870 - - - 404 0 - 23.4309ms
+ 2023-01-03 19:49:12.002 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410Q-BC78-2D54A9991870 - -
+ 2023-01-03 19:49:12.005 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410Q-BC78-2D54A9991870 - - - 404 0 - 2.0948ms
+ 2023-01-03 19:49:16.795 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - -
+ 2023-01-03 19:49:16.799 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:49:16.863 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:49:18.719 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:49:19.832 +01:00 [] Executed DbCommand (36ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:49:19.877 +01:00 [] Executing OkObjectResult, writing value of type 'Shared.DataTransferObject.CompanyDto'.
+ 2023-01-03 19:49:19.911 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 3043.358ms
+ 2023-01-03 19:49:19.912 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:49:19.918 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - - - 200 - application/json;+charset=utf-8 3123.3848ms
+ 2023-01-03 19:49:26.180 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-411C-BC78-2D54A9991870 - -
+ 2023-01-03 19:49:26.181 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:49:26.181 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:49:26.269 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:49:26.283 +01:00 [] Executed DbCommand (4ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:49:32.105 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 5923.0246ms
+ 2023-01-03 19:49:32.110 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:49:32.119 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-411c-bc78-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:49:32.223 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-411c-bc78-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:49:32.231 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-411C-BC78-2D54A9991870 - - - 404 - application/json 6050.7652ms
+ 2023-01-03 19:51:00.250 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991871 - -
+ 2023-01-03 19:51:00.253 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:51:00.253 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:51:00.279 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:51:00.284 +01:00 [] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:51:23.836 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 23582.706ms
+ 2023-01-03 19:51:23.847 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:51:23.857 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991871 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:51:34.020 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991871 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:51:47.318 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991871 - - - 404 - application/json 47071.2817ms
+ 2023-01-03 19:54:02.675 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 19:54:02.702 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 19:54:02.704 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 19:54:02.704 +01:00 [] Hosting environment: Development
+ 2023-01-03 19:54:02.704 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 19:54:03.489 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 19:54:03.924 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 439.2939ms
+ 2023-01-03 19:54:03.951 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 19:54:03.959 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.2055ms
+ 2023-01-03 19:54:04.156 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 19:54:04.239 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.1959ms
+ 2023-01-03 19:54:04.379 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 19:54:04.583 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 204.5671ms
+ 2023-01-03 19:54:14.526 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991871 - -
+ 2023-01-03 19:54:14.544 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:54:14.603 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 19:54:16.592 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 19:54:17.768 +01:00 [] Executed DbCommand (56ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 19:54:20.813 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 6202.5015ms
+ 2023-01-03 19:54:20.821 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 19:54:20.832 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991871 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:54:20.978 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991871 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 19:54:20.994 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991871 - - - 404 - application/json 6467.7947ms
+ 2023-01-03 20:01:04.751 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 20:01:04.776 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 20:01:04.778 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 20:01:04.778 +01:00 [] Hosting environment: Development
+ 2023-01-03 20:01:04.778 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 20:01:05.683 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 20:01:06.040 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 360.2651ms
+ 2023-01-03 20:01:06.064 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 20:01:06.070 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.7358ms
+ 2023-01-03 20:01:06.274 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 20:01:06.358 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.0894ms
+ 2023-01-03 20:01:06.520 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 20:01:06.748 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 228.1520ms
+ 2023-01-03 20:01:14.737 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - -
+ 2023-01-03 20:01:14.752 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:01:14.815 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 20:01:16.771 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 20:01:17.929 +01:00 [] Executed DbCommand (66ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 20:01:18.028 +01:00 [] Executing OkObjectResult, writing value of type 'Shared.DataTransferObject.CompanyDto'.
+ 2023-01-03 20:01:18.079 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 3256.7178ms
+ 2023-01-03 20:01:18.080 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:01:18.089 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 - - - 200 - application/json;+charset=utf-8 3352.2147ms
+ 2023-01-03 20:01:25.927 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9891870 - -
+ 2023-01-03 20:01:25.929 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:01:25.930 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 20:01:26.043 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 20:01:26.055 +01:00 [] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 20:01:35.996 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 10065.1387ms
+ 2023-01-03 20:01:36.006 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:01:36.022 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9891870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 20:01:36.183 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9891870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid Id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 20:01:36.189 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9891870 - - - 404 - application/json 10262.4016ms
+ 2023-01-03 20:04:42.582 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-03 20:04:42.631 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-03 20:04:42.634 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-03 20:04:42.635 +01:00 [] Hosting environment: Development
+ 2023-01-03 20:04:42.635 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-03 20:04:43.310 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-03 20:04:43.689 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 382.5995ms
+ 2023-01-03 20:04:43.709 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-03 20:04:43.720 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.8172ms
+ 2023-01-03 20:04:43.911 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-03 20:04:44.011 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.2915ms
+ 2023-01-03 20:04:44.157 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-03 20:04:44.360 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 202.6956ms
+ 2023-01-03 20:04:53.900 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991877 - -
+ 2023-01-03 20:04:53.921 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:04:53.990 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 20:04:55.838 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 20:04:56.838 +01:00 [] Executed DbCommand (63ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 20:04:59.334 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 5336.8032ms
+ 2023-01-03 20:04:59.341 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:04:59.351 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991877 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 20:04:59.481 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991877 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 20:04:59.494 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991877 - - - 404 - application/json 5594.8763ms
+ 2023-01-03 20:05:08.289 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-411C-BC78-2D54A9991870 - -
+ 2023-01-03 20:05:08.291 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:05:08.292 +01:00 [] Route matched with {action = "getCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompany(System.Guid) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-03 20:05:08.379 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-03 20:05:08.394 +01:00 [] Executed DbCommand (5ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-03 20:05:10.976 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation) in 2683.2631ms
+ 2023-01-03 20:05:10.981 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompany (tutorial.presentation)'
+ 2023-01-03 20:05:10.986 +01:00 [] An unhandled exception has occurred while executing the request.
+tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-411c-bc78-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 20:05:16.376 +01:00 [] Something went wrong: tutorial.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-411c-bc78-2d54a9991870 doesn't exist in the database.
+   at Services.CompanyService.GetCompany(Guid id, Boolean trackChanges) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Services\CompanyService.cs:line 40
+   at tutorial.presentation.Controllers.CompaniesController.getCompany(Guid id) in C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.presentation\Controllers\CompaniesController.cs:line 31
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-03 20:05:17.398 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-411C-BC78-2D54A9991870 - - - 404 - application/json 9109.7261ms

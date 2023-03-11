@@ -1,0 +1,13 @@
+ 2023-01-22 14:09:47.357 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-22 14:09:47.396 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-22 14:09:47.398 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-22 14:09:47.399 +01:00 [] Hosting environment: Development
+ 2023-01-22 14:09:47.399 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-22 14:09:48.885 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-22 14:09:49.504 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 622.7168ms
+ 2023-01-22 14:09:49.545 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-22 14:09:49.554 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.3652ms
+ 2023-01-22 14:09:49.702 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-22 14:09:49.803 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.3328ms
+ 2023-01-22 14:09:49.977 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-22 14:09:50.911 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 934.2148ms

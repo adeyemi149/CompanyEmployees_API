@@ -1,0 +1,115 @@
+ 2022-12-21 11:48:45.855 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-21 11:48:45.885 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-21 11:48:45.887 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-21 11:48:45.887 +01:00 [] Hosting environment: Development
+ 2022-12-21 11:48:45.887 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-21 11:48:46.960 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-21 11:48:47.393 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 437.9036ms
+ 2022-12-21 11:48:47.421 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-21 11:48:47.433 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.5835ms
+ 2022-12-21 11:48:47.581 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-21 11:48:47.674 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 96.3986ms
+ 2022-12-21 11:48:48.101 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-21 11:48:48.325 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 224.4021ms
+ 2022-12-21 12:01:15.496 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2022-12-21 12:01:58.996 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2022-12-21 12:01:59.928 +01:00 [] Executed DbCommand (414ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [TutorialDb];
+ 2022-12-21 12:02:00.059 +01:00 [] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [TutorialDb] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+ 2022-12-21 12:02:00.079 +01:00 [] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ 2022-12-21 12:02:00.175 +01:00 [] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+ 2022-12-21 12:02:00.177 +01:00 [] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ 2022-12-21 12:02:00.195 +01:00 [] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2022-12-21 12:02:00.202 +01:00 [] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2022-12-21 12:02:00.218 +01:00 [] Applying migration '20221221110115_initialMigration'.
+ 2022-12-21 12:02:00.269 +01:00 [] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Companies] (
+    [CompanyId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(60) NOT NULL,
+    [Address] nvarchar(60) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Companies] PRIMARY KEY ([CompanyId])
+);
+ 2022-12-21 12:02:00.273 +01:00 [] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Employees] (
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [Name] nvarchar(30) NOT NULL,
+    [Age] int NOT NULL,
+    [Position] nvarchar(20) NOT NULL,
+    [CompanyId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Employees] PRIMARY KEY ([EmployeeId]),
+    CONSTRAINT [FK_Employees_Companies_CompanyId] FOREIGN KEY ([CompanyId]) REFERENCES [Companies] ([CompanyId]) ON DELETE CASCADE
+);
+ 2022-12-21 12:02:00.276 +01:00 [] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Employees_CompanyId] ON [Employees] ([CompanyId]);
+ 2022-12-21 12:02:00.286 +01:00 [] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221221110115_initialMigration', N'6.0.9');
+ 2022-12-21 12:14:18.754 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2022-12-21 12:14:26.749 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2022-12-21 12:14:27.105 +01:00 [] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ 2022-12-21 12:14:27.255 +01:00 [] Executed DbCommand (136ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2022-12-21 12:14:27.258 +01:00 [] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ 2022-12-21 12:14:27.259 +01:00 [] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ 2022-12-21 12:14:27.286 +01:00 [] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ 2022-12-21 12:14:27.305 +01:00 [] Applying migration '20221221111419_InitialData'.
+ 2022-12-21 12:14:27.384 +01:00 [] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CompanyId', N'Address', N'Country', N'Name') AND [object_id] = OBJECT_ID(N'[Companies]'))
+    SET IDENTITY_INSERT [Companies] ON;
+INSERT INTO [Companies] ([CompanyId], [Address], [Country], [Name])
+VALUES ('3d490a70-94ce-4d15-9494-5248280c2ce3', N'312 Forest Avenue, BF 923', N'USA', N'Admin_Solutions Ltd');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CompanyId', N'Address', N'Country', N'Name') AND [object_id] = OBJECT_ID(N'[Companies]'))
+    SET IDENTITY_INSERT [Companies] OFF;
+ 2022-12-21 12:14:27.394 +01:00 [] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CompanyId', N'Address', N'Country', N'Name') AND [object_id] = OBJECT_ID(N'[Companies]'))
+    SET IDENTITY_INSERT [Companies] ON;
+INSERT INTO [Companies] ([CompanyId], [Address], [Country], [Name])
+VALUES ('c9d4c053-49b6-410c-bc78-2d54a9991870', N'583 Wall Dr. Gwynn Oak, MD 21207', N'USA', N'IT_Solutions Ltd');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CompanyId', N'Address', N'Country', N'Name') AND [object_id] = OBJECT_ID(N'[Companies]'))
+    SET IDENTITY_INSERT [Companies] OFF;
+ 2022-12-21 12:14:27.405 +01:00 [] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Age', N'CompanyId', N'Name', N'Position') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES ('021ca3c1-0deb-4afd-ae94-2159a8479811', 35, '3d490a70-94ce-4d15-9494-5248280c2ce3', N'Kane Miller', N'Administrator');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Age', N'CompanyId', N'Name', N'Position') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] OFF;
+ 2022-12-21 12:14:27.414 +01:00 [] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Age', N'CompanyId', N'Name', N'Position') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES ('80abbca8-664d-4b20-b5de-024705497d4a', 26, 'c9d4c053-49b6-410c-bc78-2d54a9991870', N'Sam Raiden', N'Software developer');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Age', N'CompanyId', N'Name', N'Position') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] OFF;
+ 2022-12-21 12:14:27.422 +01:00 [] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Age', N'CompanyId', N'Name', N'Position') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES ('86dba8c0-d178-41e7-938c-ed49778fb52a', 30, 'c9d4c053-49b6-410c-bc78-2d54a9991870', N'Jana McLeaf', N'Software developer');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Age', N'CompanyId', N'Name', N'Position') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] OFF;
+ 2022-12-21 12:14:27.423 +01:00 [] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221221111419_InitialData', N'6.0.9');

@@ -1,0 +1,106 @@
+ 2023-03-11 12:27:20.605 +01:00 [] Now listening on: https://localhost:7087
+ 2023-03-11 12:27:20.780 +01:00 [] Now listening on: http://localhost:5291
+ 2023-03-11 12:27:20.790 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-03-11 12:27:20.793 +01:00 [] Hosting environment: Development
+ 2023-03-11 12:27:20.793 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\Employee_Company_API\tutorialAPI
+ 2023-03-11 12:27:25.849 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-03-11 12:27:27.562 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-03-11 12:27:27.599 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1759.3532ms
+ 2023-03-11 12:27:27.617 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 54.6187ms
+ 2023-03-11 12:27:28.541 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-03-11 12:27:28.995 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 454.7329ms
+ 2023-03-11 12:27:29.748 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-03-11 12:27:30.938 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1189.2317ms
+ 2023-03-11 12:35:34.131 +01:00 [] Now listening on: https://localhost:7087
+ 2023-03-11 12:35:34.306 +01:00 [] Now listening on: http://localhost:5291
+ 2023-03-11 12:35:34.319 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-03-11 12:35:34.321 +01:00 [] Hosting environment: Development
+ 2023-03-11 12:35:34.322 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\Employee_Company_API\tutorialAPI
+ 2023-03-11 12:35:40.287 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-03-11 12:35:42.960 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2688.5908ms
+ 2023-03-11 12:35:44.441 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-03-11 12:35:44.441 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-03-11 12:35:44.494 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 53.0430ms
+ 2023-03-11 12:35:45.003 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 562.5844ms
+ 2023-03-11 12:35:45.491 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-03-11 12:35:46.740 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1248.0506ms
+ 2023-03-11 12:36:32.603 +01:00 [] Now listening on: https://localhost:7087
+ 2023-03-11 12:36:32.862 +01:00 [] Now listening on: http://localhost:5291
+ 2023-03-11 12:36:32.874 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-03-11 12:36:32.877 +01:00 [] Hosting environment: Development
+ 2023-03-11 12:36:32.877 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\Employee_Company_API\tutorialAPI
+ 2023-03-11 12:36:34.688 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-03-11 12:36:36.285 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1612.6532ms
+ 2023-03-11 12:36:37.229 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-03-11 12:36:37.229 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-03-11 12:36:37.281 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 41.2812ms
+ 2023-03-11 12:36:37.513 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 283.1480ms
+ 2023-03-11 12:36:38.144 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-03-11 12:36:39.169 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1024.5123ms
+ 2023-03-11 12:36:48.989 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/api/companies - -
+ 2023-03-11 12:36:49.016 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (CompanyEmployees.presentation)'
+ 2023-03-11 12:36:49.193 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanies(Shared.RequestFeatures.CompanyParameters) on controller tutorial.presentation.Controllers.CompaniesController (CompanyEmployees.presentation).
+ 2023-03-11 12:36:56.384 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-03-11 12:37:18.271 +01:00 [] Executed DbCommand (306ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-03-11 12:37:18.568 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-03-11 12:37:18.650 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.GetCompanies (CompanyEmployees.presentation) in 29432.4887ms
+ 2023-03-11 12:37:18.656 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (CompanyEmployees.presentation)'
+ 2023-03-11 12:37:18.687 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/api/companies - - - 200 - application/json;+charset=utf-8 29698.3093ms
+ 2023-03-11 12:37:46.268 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?fields=name,age - -
+ 2023-03-11 12:37:46.270 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (CompanyEmployees.presentation)'
+ 2023-03-11 12:37:46.315 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (CompanyEmployees.presentation).
+ 2023-03-11 12:37:46.675 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-03-11 12:37:47.129 +01:00 [] Executed DbCommand (88ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-03-11 12:37:47.324 +01:00 [] Executed DbCommand (26ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))
+ORDER BY [e].[Name]
+ 2023-03-11 12:37:47.471 +01:00 [] Executed DbCommand (21ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-03-11 12:37:47.571 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+ 2023-03-11 12:37:47.593 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (CompanyEmployees.presentation) in 1277.0377ms
+ 2023-03-11 12:37:47.594 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (CompanyEmployees.presentation)'
+ 2023-03-11 12:37:47.596 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees?fields=name,age - - - 200 - application/json;+charset=utf-8 1328.2319ms
+ 2023-03-11 12:38:01.255 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees - -
+ 2023-03-11 12:38:01.256 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (CompanyEmployees.presentation)'
+ 2023-03-11 12:38:01.257 +01:00 [] Route matched with {action = "GetEmployeesForCompany", controller = "Employess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesForCompany(System.Guid, Shared.RequestFeatures.EmployeeParameters) on controller tutorial.presentation.Controllers.EmployessController (CompanyEmployees.presentation).
+ 2023-03-11 12:38:01.331 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-03-11 12:38:01.357 +01:00 [] Executed DbCommand (13ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-03-11 12:38:01.386 +01:00 [] Executed DbCommand (17ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ((CAST([e].[Age] AS bigint) >= @__p_1) AND (CAST([e].[Age] AS bigint) <= @__p_2))
+ORDER BY [e].[Name]
+ 2023-03-11 12:38:01.398 +01:00 [] Executed DbCommand (9ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ 2023-03-11 12:38:01.408 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+ 2023-03-11 12:38:01.410 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (CompanyEmployees.presentation) in 152.8402ms
+ 2023-03-11 12:38:01.410 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.GetEmployeesForCompany (CompanyEmployees.presentation)'
+ 2023-03-11 12:38:01.411 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees - - - 200 - application/json;+charset=utf-8 155.4898ms
+ 2023-03-11 13:45:11.073 +01:00 [] Now listening on: https://localhost:7087
+ 2023-03-11 13:45:11.229 +01:00 [] Now listening on: http://localhost:5291
+ 2023-03-11 13:45:11.242 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-03-11 13:45:11.244 +01:00 [] Hosting environment: Development
+ 2023-03-11 13:45:11.244 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\Employee_Company_API\tutorialAPI
+ 2023-03-11 13:45:13.315 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-03-11 13:45:15.001 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1705.5967ms
+ 2023-03-11 13:45:16.259 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-03-11 13:45:16.259 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-03-11 13:45:16.347 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 88.4009ms
+ 2023-03-11 13:45:16.824 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 564.8126ms
+ 2023-03-11 13:45:17.687 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-03-11 13:45:18.744 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1057.2400ms

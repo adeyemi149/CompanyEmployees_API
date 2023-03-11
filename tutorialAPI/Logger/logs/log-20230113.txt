@@ -1,0 +1,518 @@
+ 2023-01-13 11:12:18.476 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 11:12:18.519 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 11:12:18.522 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 11:12:18.522 +01:00 [] Hosting environment: Development
+ 2023-01-13 11:12:18.522 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 11:12:19.842 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 11:12:20.438 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 602.5280ms
+ 2023-01-13 11:12:20.472 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 11:12:20.485 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 13.0620ms
+ 2023-01-13 11:12:20.683 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 11:12:20.913 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 229.7994ms
+ 2023-01-13 11:12:21.034 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 11:12:21.433 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 399.2100ms
+ 2023-01-13 11:23:52.175 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 11:23:52.231 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 11:23:52.235 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 11:23:52.236 +01:00 [] Hosting environment: Development
+ 2023-01-13 11:23:52.236 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 11:23:53.562 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 11:23:54.124 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 567.3291ms
+ 2023-01-13 11:23:54.153 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 11:23:54.165 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 12.5574ms
+ 2023-01-13 11:23:54.342 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 11:23:54.530 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 188.3729ms
+ 2023-01-13 11:23:54.639 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 11:23:54.968 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 329.1215ms
+ 2023-01-13 11:25:23.106 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 193
+ 2023-01-13 11:25:23.116 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 11:25:23.174 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 11:25:24.234 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 1056.1089ms
+ 2023-01-13 11:25:24.238 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 11:25:24.243 +01:00 [] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Deserialization of interface types is not supported. Type 'Newtonsoft.Json.Serialization.IContractResolver'. Path: $.contractResolver | LineNumber: 10 | BytePositionInLine: 23.
+ ---> System.NotSupportedException: Deserialization of interface types is not supported. Type 'Newtonsoft.Json.Serialization.IContractResolver'.
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(ReadStack& state, Utf8JsonReader& reader, NotSupportedException ex)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](Utf8JsonReader& reader, JsonTypeInfo jsonTypeInfo, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-13 11:25:24.297 +01:00 [] Something went wrong: System.NotSupportedException: Deserialization of interface types is not supported. Type 'Newtonsoft.Json.Serialization.IContractResolver'. Path: $.contractResolver | LineNumber: 10 | BytePositionInLine: 23.
+ ---> System.NotSupportedException: Deserialization of interface types is not supported. Type 'Newtonsoft.Json.Serialization.IContractResolver'.
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(ReadStack& state, Utf8JsonReader& reader, NotSupportedException ex)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](Utf8JsonReader& reader, JsonTypeInfo jsonTypeInfo, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ 2023-01-13 11:25:24.308 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 193 - 500 - application/json 1202.3169ms
+ 2023-01-13 11:25:52.734 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 166
+ 2023-01-13 11:25:52.737 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 11:25:52.737 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 11:25:53.742 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-13 11:25:55.692 +01:00 [] Executed DbCommand (58ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-13 11:25:55.753 +01:00 [] Executed DbCommand (4ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ([e].[EmployeeId] = @__id_1)
+ 2023-01-13 11:30:32.461 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 11:30:32.530 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 11:30:32.534 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 11:30:32.534 +01:00 [] Hosting environment: Development
+ 2023-01-13 11:30:32.535 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 11:30:33.361 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 11:30:33.873 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 518.3423ms
+ 2023-01-13 11:30:33.907 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 11:30:33.919 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 12.4705ms
+ 2023-01-13 11:30:34.081 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 11:30:34.170 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.4329ms
+ 2023-01-13 11:30:34.290 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 11:30:34.579 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 288.4993ms
+ 2023-01-13 11:30:51.488 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 166
+ 2023-01-13 11:30:51.495 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 11:30:51.530 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 11:30:52.780 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-13 11:30:53.509 +01:00 [] Executed DbCommand (37ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-13 11:30:53.580 +01:00 [] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ([e].[EmployeeId] = @__id_1)
+ 2023-01-13 11:32:46.383 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 11:32:46.447 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 11:32:46.451 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 11:32:46.452 +01:00 [] Hosting environment: Development
+ 2023-01-13 11:32:46.452 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 11:32:47.505 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 11:32:48.125 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 625.4415ms
+ 2023-01-13 11:32:48.168 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 11:32:48.182 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 14.2753ms
+ 2023-01-13 11:32:48.418 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 11:32:48.549 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 130.3768ms
+ 2023-01-13 11:32:48.714 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 11:32:49.058 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 344.0314ms
+ 2023-01-13 11:33:14.942 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 166
+ 2023-01-13 11:33:14.950 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 11:33:14.997 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 11:33:16.363 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-13 11:33:17.131 +01:00 [] Executed DbCommand (40ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-13 11:33:17.193 +01:00 [] Executed DbCommand (4ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ([e].[EmployeeId] = @__id_1)
+ 2023-01-13 11:37:24.542 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 11:37:24.590 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 11:37:24.593 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 11:37:24.594 +01:00 [] Hosting environment: Development
+ 2023-01-13 11:37:24.594 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 11:37:25.697 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 11:37:26.374 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 682.9487ms
+ 2023-01-13 11:37:26.406 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 11:37:26.417 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.1579ms
+ 2023-01-13 11:37:26.576 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 11:37:26.670 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 94.3141ms
+ 2023-01-13 11:37:26.805 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 11:37:27.122 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 316.1802ms
+ 2023-01-13 11:37:57.619 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 164
+ 2023-01-13 11:37:57.627 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 11:37:57.666 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 11:37:58.963 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-13 11:37:59.731 +01:00 [] Executed DbCommand (43ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-13 11:37:59.784 +01:00 [] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ([e].[EmployeeId] = @__id_1)
+ 2023-01-13 11:39:45.519 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 11:39:45.578 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 11:39:45.582 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 11:39:45.583 +01:00 [] Hosting environment: Development
+ 2023-01-13 11:39:45.583 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 11:39:46.901 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 11:39:47.514 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 618.6951ms
+ 2023-01-13 11:39:47.548 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 11:39:47.558 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.3575ms
+ 2023-01-13 11:39:47.766 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 11:39:47.896 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.6279ms
+ 2023-01-13 11:39:48.070 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 11:39:48.453 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 382.8909ms
+ 2023-01-13 11:40:00.257 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 75
+ 2023-01-13 11:40:00.266 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 11:40:00.310 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 11:40:01.522 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-13 11:40:02.265 +01:00 [] Executed DbCommand (47ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-13 11:40:02.325 +01:00 [] Executed DbCommand (4ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE ([e].[CompanyId] = @__companyId_0) AND ([e].[EmployeeId] = @__id_1)
+ 2023-01-13 12:03:11.039 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:03:11.071 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:03:11.073 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:03:11.073 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:03:11.073 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:03:12.232 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:03:12.744 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 518.1868ms
+ 2023-01-13 12:03:12.780 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:03:12.788 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.7044ms
+ 2023-01-13 12:03:12.921 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:03:13.002 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.0327ms
+ 2023-01-13 12:03:13.127 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:03:13.450 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 322.8224ms
+ 2023-01-13 12:04:19.488 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94
+ 2023-01-13 12:04:19.497 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:04:19.542 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:04:20.080 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:04:20.088 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 540.9444ms
+ 2023-01-13 12:04:20.089 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:04:20.092 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94 - 400 - text/plain;+charset=utf-8 604.1149ms
+ 2023-01-13 12:04:40.335 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94
+ 2023-01-13 12:04:40.336 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:04:40.337 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:04:51.111 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:04:51.112 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 10774.6677ms
+ 2023-01-13 12:04:51.112 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:04:51.112 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94 - 400 - text/plain;+charset=utf-8 10777.0170ms
+ 2023-01-13 12:05:12.167 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:05:12.211 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:05:12.214 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:05:12.214 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:05:12.214 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:05:13.148 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:05:13.595 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 450.4059ms
+ 2023-01-13 12:05:13.618 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:05:13.634 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 15.1050ms
+ 2023-01-13 12:05:13.781 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:05:13.890 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.6798ms
+ 2023-01-13 12:05:13.998 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:05:14.283 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 284.5102ms
+ 2023-01-13 12:05:18.257 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94
+ 2023-01-13 12:05:18.263 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:05:18.292 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:05:18.663 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:05:18.673 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 374.1375ms
+ 2023-01-13 12:05:18.675 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:05:18.680 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94 - 400 - text/plain;+charset=utf-8 423.7594ms
+ 2023-01-13 12:05:46.477 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94
+ 2023-01-13 12:05:46.483 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:05:46.483 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:05:46.497 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:05:46.497 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 13.5835ms
+ 2023-01-13 12:05:46.497 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:05:46.497 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94 - 400 - text/plain;+charset=utf-8 20.9663ms
+ 2023-01-13 12:06:28.238 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:06:28.293 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:06:28.297 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:06:28.298 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:06:28.299 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:06:29.108 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:06:29.731 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 627.9067ms
+ 2023-01-13 12:06:29.765 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:06:29.773 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.0525ms
+ 2023-01-13 12:06:29.892 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:06:29.976 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.6291ms
+ 2023-01-13 12:06:30.103 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:06:30.386 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 283.2729ms
+ 2023-01-13 12:06:34.640 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 95
+ 2023-01-13 12:06:34.648 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:06:34.678 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:06:35.084 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:06:35.091 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 407.5448ms
+ 2023-01-13 12:06:35.092 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:06:35.095 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 95 - 400 - text/plain;+charset=utf-8 454.4758ms
+ 2023-01-13 12:09:39.625 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:09:39.676 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:09:39.679 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:09:39.680 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:09:39.680 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:09:40.851 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:09:41.335 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 486.0811ms
+ 2023-01-13 12:09:41.358 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:09:41.366 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.4101ms
+ 2023-01-13 12:09:41.486 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:09:41.569 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.1175ms
+ 2023-01-13 12:09:41.702 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:09:41.983 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 280.4193ms
+ 2023-01-13 12:09:51.030 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94
+ 2023-01-13 12:09:51.038 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:09:51.067 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:09:51.405 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:09:51.411 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 339.2752ms
+ 2023-01-13 12:09:51.412 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:09:51.414 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 94 - 400 - text/plain;+charset=utf-8 384.8657ms
+ 2023-01-13 12:10:36.000 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 93
+ 2023-01-13 12:10:36.007 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:10:36.008 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:10:36.017 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:10:36.018 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 9.9613ms
+ 2023-01-13 12:10:36.018 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:10:36.018 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 93 - 400 - text/plain;+charset=utf-8 17.7137ms
+ 2023-01-13 12:23:43.350 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:23:43.452 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:23:43.458 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:23:43.459 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:23:43.460 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:23:44.353 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:23:45.122 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 774.7745ms
+ 2023-01-13 12:23:45.154 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:23:45.160 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.1789ms
+ 2023-01-13 12:23:45.303 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:23:45.396 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 92.5003ms
+ 2023-01-13 12:23:45.509 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:23:45.788 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 279.0735ms
+ 2023-01-13 12:23:51.134 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 93
+ 2023-01-13 12:23:51.140 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:23:51.168 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:24:33.629 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:24:33.674 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:24:33.677 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:24:33.677 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:24:33.677 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:24:34.765 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:24:35.304 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 545.4212ms
+ 2023-01-13 12:24:35.335 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:24:35.352 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 16.8124ms
+ 2023-01-13 12:24:35.510 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:24:35.593 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.7031ms
+ 2023-01-13 12:24:35.749 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:24:35.993 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 244.2046ms
+ 2023-01-13 12:27:24.327 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 112
+ 2023-01-13 12:27:24.333 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:27:24.369 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:28:59.222 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:28:59.270 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:28:59.272 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:28:59.272 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:28:59.272 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:29:00.335 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:29:00.840 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 508.4313ms
+ 2023-01-13 12:29:00.871 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:29:00.878 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.6151ms
+ 2023-01-13 12:29:01.023 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:29:01.130 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.4106ms
+ 2023-01-13 12:29:01.248 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:29:01.520 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 271.6408ms
+ 2023-01-13 12:30:51.929 +01:00 [] Request starting HTTP/2 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json-patch+json 102
+ 2023-01-13 12:30:51.946 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:30:51.978 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:32:12.566 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:32:12.626 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:32:12.631 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:32:12.632 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:32:12.632 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:32:13.588 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:32:14.245 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 662.5019ms
+ 2023-01-13 12:32:14.448 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:32:14.463 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:32:14.481 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 17.9516ms
+ 2023-01-13 12:32:14.523 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.5954ms
+ 2023-01-13 12:32:14.644 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:32:14.917 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 272.7662ms
+ 2023-01-13 12:33:36.874 +01:00 [] Request starting HTTP/2 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json-patch+json 176
+ 2023-01-13 12:33:36.890 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:33:36.922 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:33:48.331 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:33:48.342 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 11413.0238ms
+ 2023-01-13 12:33:48.344 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:33:48.347 +01:00 [] Request finished HTTP/2 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json-patch+json 176 - 400 - text/plain;+charset=utf-8 11473.1800ms
+ 2023-01-13 12:38:04.678 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:38:04.727 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:38:04.730 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:38:04.731 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:38:04.731 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:38:05.796 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:38:06.462 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 673.0132ms
+ 2023-01-13 12:38:06.510 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:38:06.527 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 16.8013ms
+ 2023-01-13 12:38:06.665 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:38:06.746 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.3868ms
+ 2023-01-13 12:38:06.856 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:38:07.141 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 285.8672ms
+ 2023-01-13 12:50:22.324 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:50:22.386 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:50:22.389 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:50:22.390 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:50:22.390 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:50:23.804 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:50:24.457 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 713.9147ms
+ 2023-01-13 12:50:24.505 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:50:24.522 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 16.7863ms
+ 2023-01-13 12:52:35.193 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 12:52:35.241 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 12:52:35.245 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 12:52:35.246 +01:00 [] Hosting environment: Development
+ 2023-01-13 12:52:35.246 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 12:52:36.027 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 12:52:36.382 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 358.7967ms
+ 2023-01-13 12:52:36.408 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 12:52:36.414 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.3317ms
+ 2023-01-13 12:52:36.562 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 12:52:36.644 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.2582ms
+ 2023-01-13 12:52:36.774 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 12:52:37.029 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 254.7237ms
+ 2023-01-13 12:52:47.074 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 96
+ 2023-01-13 12:52:47.081 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:52:47.118 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:52:47.525 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:52:47.532 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 408.9324ms
+ 2023-01-13 12:52:47.534 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:52:47.536 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 96 - 400 - text/plain;+charset=utf-8 461.9390ms
+ 2023-01-13 12:55:20.142 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 95
+ 2023-01-13 12:55:20.142 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:55:20.143 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:55:20.153 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:55:20.153 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 10.5558ms
+ 2023-01-13 12:55:20.153 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:55:20.154 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 95 - 400 - text/plain;+charset=utf-8 11.7928ms
+ 2023-01-13 12:55:25.373 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 96
+ 2023-01-13 12:55:25.374 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:55:25.374 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 12:55:25.378 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-13 12:55:25.378 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 4.1065ms
+ 2023-01-13 12:55:25.378 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 12:55:25.378 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 96 - 400 - text/plain;+charset=utf-8 4.8543ms
+ 2023-01-13 13:41:28.891 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 13:41:28.926 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 13:41:28.928 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 13:41:28.929 +01:00 [] Hosting environment: Development
+ 2023-01-13 13:41:28.929 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 13:41:29.966 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 13:41:30.301 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 337.5188ms
+ 2023-01-13 13:41:30.326 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 13:41:30.334 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.2754ms
+ 2023-01-13 13:41:30.457 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 13:41:30.522 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.1568ms
+ 2023-01-13 13:41:30.666 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 13:41:31.026 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 362.7874ms
+ 2023-01-13 13:42:02.026 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 55
+ 2023-01-13 13:42:02.032 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:42:02.071 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 13:42:02.469 +01:00 [] Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+ 2023-01-13 13:42:02.481 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 404.2864ms
+ 2023-01-13 13:42:02.482 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:42:02.484 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 55 - 422 - application/json;+charset=utf-8 457.6490ms
+ 2023-01-13 13:44:10.958 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 13:44:10.991 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 13:44:10.993 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 13:44:10.994 +01:00 [] Hosting environment: Development
+ 2023-01-13 13:44:10.994 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 13:44:11.754 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 13:44:12.097 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 346.3616ms
+ 2023-01-13 13:44:12.136 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 13:44:12.143 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.9327ms
+ 2023-01-13 13:44:12.261 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 13:44:12.345 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.4401ms
+ 2023-01-13 13:44:12.459 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 13:44:12.698 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 242.1624ms
+ 2023-01-13 13:44:26.066 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41
+ 2023-01-13 13:44:26.074 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:44:26.117 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 13:44:26.497 +01:00 [] Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+ 2023-01-13 13:44:26.509 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 387.3557ms
+ 2023-01-13 13:44:26.511 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:44:26.513 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41 - 422 - application/json;+charset=utf-8 447.4692ms
+ 2023-01-13 13:49:15.234 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 13:49:15.292 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 13:49:15.296 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 13:49:15.297 +01:00 [] Hosting environment: Development
+ 2023-01-13 13:49:15.297 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 13:49:16.523 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 13:49:17.201 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 683.2342ms
+ 2023-01-13 13:49:17.235 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 13:49:17.249 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 13.7276ms
+ 2023-01-13 13:49:17.434 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 13:49:17.527 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 92.3634ms
+ 2023-01-13 13:49:17.699 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 13:49:18.033 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 333.9398ms
+ 2023-01-13 13:49:21.564 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41
+ 2023-01-13 13:49:21.573 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:49:21.608 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 13:49:21.923 +01:00 [] Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+ 2023-01-13 13:49:21.933 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 320.698ms
+ 2023-01-13 13:49:21.934 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:49:21.937 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41 - 422 - application/json;+charset=utf-8 373.1541ms
+ 2023-01-13 13:49:32.343 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41
+ 2023-01-13 13:49:32.344 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:49:32.344 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 13:49:32.356 +01:00 [] Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+ 2023-01-13 13:49:32.357 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 12.1926ms
+ 2023-01-13 13:49:32.357 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:49:32.357 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41 - 422 - application/json;+charset=utf-8 13.9486ms
+ 2023-01-13 13:49:42.858 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41
+ 2023-01-13 13:49:42.859 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:49:42.859 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 13:49:42.872 +01:00 [] Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+ 2023-01-13 13:49:42.872 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 13.034ms
+ 2023-01-13 13:49:42.872 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-13 13:49:42.872 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 41 - 422 - application/json;+charset=utf-8 13.6761ms
+ 2023-01-13 13:56:32.404 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-13 13:56:32.440 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-13 13:56:32.442 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-13 13:56:32.443 +01:00 [] Hosting environment: Development
+ 2023-01-13 13:56:32.443 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-13 13:56:33.292 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-13 13:56:33.693 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 409.5782ms
+ 2023-01-13 13:56:33.723 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-13 13:56:33.731 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.6743ms
+ 2023-01-13 13:56:33.864 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-13 13:56:33.944 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.3928ms
+ 2023-01-13 13:56:34.053 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-13 13:56:34.322 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 269.0573ms
+ 2023-01-13 13:57:10.694 +01:00 [] Request starting HTTP/1.1 PUT https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 63
+ 2023-01-13 13:57:10.701 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.UpdateEmployee (tutorial.presentation)'
+ 2023-01-13 13:57:10.742 +01:00 [] Route matched with {action = "UpdateEmployee", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateEmployee(System.Guid, System.Guid, Shared.DataTransferObject.EmployeeForUpdateDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-13 13:57:11.173 +01:00 [] Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+ 2023-01-13 13:57:11.182 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.UpdateEmployee (tutorial.presentation) in 436.7478ms
+ 2023-01-13 13:57:11.183 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.UpdateEmployee (tutorial.presentation)'
+ 2023-01-13 13:57:11.186 +01:00 [] Request finished HTTP/1.1 PUT https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 63 - 422 - application/json;+charset=utf-8 491.7823ms

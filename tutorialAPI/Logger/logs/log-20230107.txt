@@ -1,0 +1,335 @@
+ 2023-01-07 13:57:46.976 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 13:57:47.048 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 13:57:47.051 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 13:57:47.052 +01:00 [] Hosting environment: Development
+ 2023-01-07 13:57:47.052 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 13:57:48.052 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 13:57:48.646 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 598.1372ms
+ 2023-01-07 13:57:48.904 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 13:57:48.918 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 13:57:48.932 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 13.1323ms
+ 2023-01-07 13:57:49.023 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 118.1800ms
+ 2023-01-07 13:57:49.154 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 13:57:49.403 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 249.1476ms
+ 2023-01-07 14:03:24.791 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 14:03:24.848 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 14:03:24.853 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 14:03:24.854 +01:00 [] Hosting environment: Development
+ 2023-01-07 14:03:24.854 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 14:03:25.659 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 14:03:26.082 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 429.5001ms
+ 2023-01-07 14:03:26.105 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 14:03:26.113 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.5208ms
+ 2023-01-07 14:03:26.274 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 14:03:26.354 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.9411ms
+ 2023-01-07 14:03:26.479 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 14:03:26.679 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 199.9273ms
+ 2023-01-07 14:03:39.591 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies - -
+ 2023-01-07 14:03:39.597 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-07 14:03:39.613 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 14:03:40.898 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-07 14:03:41.674 +01:00 [] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-07 14:03:41.743 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-01-07 14:03:41.783 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 2164.4904ms
+ 2023-01-07 14:03:41.784 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-07 14:03:41.793 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies - - - 200 - application/json;+charset=utf-8 2201.2225ms
+ 2023-01-07 14:03:52.994 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies - -
+ 2023-01-07 14:03:52.994 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-07 14:03:52.995 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 14:03:53.068 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-07 14:03:53.076 +01:00 [] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-07 14:03:53.099 +01:00 [] No output formatter was found for content types '["text/css"]' to write the response.
+ 2023-01-07 14:03:53.101 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 105.5782ms
+ 2023-01-07 14:03:53.101 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-07 14:03:53.101 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies - - - 406 0 - 107.8013ms
+ 2023-01-07 14:04:01.072 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies - -
+ 2023-01-07 14:04:01.072 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-07 14:04:01.073 +01:00 [] Route matched with {action = "getCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 14:04:01.096 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-07 14:04:01.098 +01:00 [] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+ 2023-01-07 14:04:01.099 +01:00 [] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shared.DataTransferObject.CompanyDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ 2023-01-07 14:04:01.102 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation) in 29.3899ms
+ 2023-01-07 14:04:01.102 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.getCompanies (tutorial.presentation)'
+ 2023-01-07 14:04:01.102 +01:00 [] Request finished HTTP/1.1 GET https://localhost:7087/api/companies - - - 200 - text/csv;+charset=utf-8 30.4119ms
+ 2023-01-07 14:43:34.997 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 14:43:35.031 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 14:43:35.033 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 14:43:35.033 +01:00 [] Hosting environment: Development
+ 2023-01-07 14:43:35.033 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 14:43:35.806 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 14:43:36.257 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 455.0627ms
+ 2023-01-07 14:43:36.288 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 14:43:36.297 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.6837ms
+ 2023-01-07 14:43:36.471 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 14:43:36.572 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.0366ms
+ 2023-01-07 14:43:36.701 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 14:43:36.968 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.8211ms
+ 2023-01-07 14:47:19.620 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 14:47:19.666 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 14:47:19.669 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 14:47:19.671 +01:00 [] Hosting environment: Development
+ 2023-01-07 14:47:19.671 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 14:47:20.755 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 14:47:21.230 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 478.5400ms
+ 2023-01-07 14:47:21.252 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 14:47:21.260 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.1932ms
+ 2023-01-07 14:47:21.418 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 14:47:21.505 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.2831ms
+ 2023-01-07 14:47:21.634 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 14:47:21.862 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 227.0780ms
+ 2023-01-07 14:50:42.255 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies application/json 102
+ 2023-01-07 14:50:42.266 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 14:50:42.298 +01:00 [] Route matched with {action = "CreateCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(Shared.DataTransferObject.CompanyForCreationDto) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 14:52:14.016 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 14:52:14.071 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 14:52:14.081 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 14:52:14.082 +01:00 [] Hosting environment: Development
+ 2023-01-07 14:52:14.082 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 14:52:15.194 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 14:52:15.841 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 651.4541ms
+ 2023-01-07 14:52:15.873 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 14:52:15.886 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 12.2039ms
+ 2023-01-07 14:52:16.022 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 14:52:16.235 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 212.7002ms
+ 2023-01-07 14:52:16.331 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 14:52:16.579 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 247.6757ms
+ 2023-01-07 14:52:20.902 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies application/json 102
+ 2023-01-07 14:52:20.911 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 14:52:20.933 +01:00 [] Route matched with {action = "CreateCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(Shared.DataTransferObject.CompanyForCreationDto) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 14:52:22.466 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-07 14:52:23.766 +01:00 [] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 60), @p2='?' (Size = 4000), @p3='?' (Size = 60)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([CompanyId], [Address], [Country], [Name])
+VALUES (@p0, @p1, @p2, @p3);
+ 2023-01-07 14:52:23.819 +01:00 [] Executing CreatedAtRouteResult, writing value of type 'Shared.DataTransferObject.CompanyDto'.
+ 2023-01-07 14:52:23.868 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation) in 2930.3405ms
+ 2023-01-07 14:52:23.868 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 14:52:23.875 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies application/json 102 - 201 - application/json;+charset=utf-8 2973.1058ms
+ 2023-01-07 17:23:07.270 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 17:23:07.307 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 17:23:07.310 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 17:23:07.311 +01:00 [] Hosting environment: Development
+ 2023-01-07 17:23:07.311 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 17:23:08.405 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 17:23:09.000 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 598.0687ms
+ 2023-01-07 17:23:09.032 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 17:23:09.039 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.9301ms
+ 2023-01-07 17:23:09.185 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 17:23:09.292 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.6280ms
+ 2023-01-07 17:23:09.422 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 17:23:09.657 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.4202ms
+ 2023-01-07 17:23:23.877 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 17:23:23.943 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 17:23:23.947 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 17:23:23.948 +01:00 [] Hosting environment: Development
+ 2023-01-07 17:23:23.948 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 17:23:24.612 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 17:23:25.216 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 607.4326ms
+ 2023-01-07 17:23:25.241 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 17:23:25.253 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.8932ms
+ 2023-01-07 17:23:25.387 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 17:23:25.501 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 113.2119ms
+ 2023-01-07 17:23:25.638 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 17:23:25.901 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 268.8172ms
+ 2023-01-07 17:23:47.680 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies - 0
+ 2023-01-07 17:23:47.696 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 17:23:47.752 +01:00 [] Route matched with {action = "CreateCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(Shared.DataTransferObject.CompanyForCreationDto) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 17:23:48.292 +01:00 [] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+ 2023-01-07 17:23:48.305 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation) in 545.6198ms
+ 2023-01-07 17:23:48.307 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 17:23:48.309 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies - 0 - 415 - application/problem+json;+charset=utf-8 629.2689ms
+ 2023-01-07 17:24:00.456 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies application/json 10
+ 2023-01-07 17:24:00.457 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 17:24:00.457 +01:00 [] Route matched with {action = "CreateCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(Shared.DataTransferObject.CompanyForCreationDto) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 17:24:00.485 +01:00 [] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+ 2023-01-07 17:24:00.488 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation) in 30.6928ms
+ 2023-01-07 17:24:00.488 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 17:24:00.488 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies application/json 10 - 400 - application/problem+json;+charset=utf-8 31.8911ms
+ 2023-01-07 17:29:59.003 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 17:29:59.061 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 17:29:59.064 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 17:29:59.065 +01:00 [] Hosting environment: Development
+ 2023-01-07 17:29:59.065 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 17:30:00.162 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 17:30:00.720 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 559.1788ms
+ 2023-01-07 17:30:00.749 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 17:30:00.758 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.1278ms
+ 2023-01-07 17:30:00.906 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 17:30:00.993 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 87.9731ms
+ 2023-01-07 17:30:01.131 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 17:30:01.410 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.7893ms
+ 2023-01-07 17:30:06.208 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies application/json 10
+ 2023-01-07 17:30:06.214 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 17:30:06.235 +01:00 [] Route matched with {action = "CreateCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(Shared.DataTransferObject.CompanyForCreationDto) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 17:30:30.794 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-07 17:30:31.558 +01:00 [] Failed executing DbCommand (70ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 60), @p2='?' (Size = 4000), @p3='?' (Size = 60)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([CompanyId], [Address], [Country], [Name])
+VALUES (@p0, @p1, @p2, @p3);
+ 2023-01-07 17:30:31.642 +01:00 [] An exception occurred in the database while saving changes for context type 'tutorial.Repository.DatabaseContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Address', table 'TutorialDb.dbo.Companies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:d0811b05-2c0a-4146-ba3a-5d9d6fd67c4e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Address', table 'TutorialDb.dbo.Companies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:d0811b05-2c0a-4146-ba3a-5d9d6fd67c4e
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+ 2023-01-07 21:33:07.410 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 21:33:07.455 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 21:33:07.457 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 21:33:07.457 +01:00 [] Hosting environment: Development
+ 2023-01-07 21:33:07.457 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 21:33:08.460 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 21:33:09.215 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 759.0830ms
+ 2023-01-07 21:33:09.241 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 21:33:09.249 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.5912ms
+ 2023-01-07 21:33:09.453 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 21:33:09.535 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.9695ms
+ 2023-01-07 21:33:09.685 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 21:33:09.992 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 307.5619ms
+ 2023-01-07 21:57:07.661 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 text/plain 79
+ 2023-01-07 21:57:07.672 +01:00 [] Executing endpoint '405 HTTP Method Not Supported'
+ 2023-01-07 21:57:07.672 +01:00 [] Executed endpoint '405 HTTP Method Not Supported'
+ 2023-01-07 21:57:07.688 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870 text/plain 79 - 405 0 - 26.9597ms
+ 2023-01-07 21:58:48.300 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees text/plain 79
+ 2023-01-07 21:58:48.301 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-07 21:58:48.341 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-07 21:58:49.192 +01:00 [] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+ 2023-01-07 21:58:49.212 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 861.03ms
+ 2023-01-07 21:58:49.213 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-07 21:58:49.216 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees text/plain 79 - 415 - application/problem+json;+charset=utf-8 916.7558ms
+ 2023-01-07 21:59:00.713 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 79
+ 2023-01-07 21:59:00.714 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-07 21:59:00.714 +01:00 [] Route matched with {action = "CreateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployeeForCompany(System.Guid, Shared.DataTransferObject.EmployeeForCreationDto) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-07 21:59:06.070 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-07 21:59:07.597 +01:00 [] Executed DbCommand (42ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+ 2023-01-07 21:59:07.948 +01:00 [] Executed DbCommand (52ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+ 2023-01-07 21:59:11.472 +01:00 [] Executing CreatedAtRouteResult, writing value of type 'Shared.DataTransferObject.EmployeeDto'.
+ 2023-01-07 21:59:14.911 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation) in 14197.0109ms
+ 2023-01-07 21:59:14.911 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.CreateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-07 21:59:14.917 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees application/json 79 - 201 - application/json;+charset=utf-8 14203.6279ms
+ 2023-01-07 22:28:59.044 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 22:28:59.082 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 22:28:59.084 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 22:28:59.085 +01:00 [] Hosting environment: Development
+ 2023-01-07 22:28:59.085 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 22:28:59.863 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 22:29:00.437 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 578.8022ms
+ 2023-01-07 22:29:00.480 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 22:29:00.488 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.5854ms
+ 2023-01-07 22:29:00.640 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 22:29:00.736 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 96.5888ms
+ 2023-01-07 22:29:00.901 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 22:29:01.163 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 262.2280ms
+ 2023-01-07 22:33:29.860 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 22:33:29.918 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 22:33:29.926 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 22:33:29.927 +01:00 [] Hosting environment: Development
+ 2023-01-07 22:33:29.927 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 22:33:30.821 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 22:33:31.333 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 515.5421ms
+ 2023-01-07 22:33:31.357 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 22:33:31.364 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.7843ms
+ 2023-01-07 22:33:31.502 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 22:33:31.618 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 115.7250ms
+ 2023-01-07 22:33:31.782 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 22:33:32.028 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 246.9625ms
+ 2023-01-07 22:37:49.990 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-07 22:37:50.029 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-07 22:37:50.033 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-07 22:37:50.034 +01:00 [] Hosting environment: Development
+ 2023-01-07 22:37:50.035 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-07 22:37:50.907 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-07 22:37:51.445 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 541.6489ms
+ 2023-01-07 22:37:51.470 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-07 22:37:51.481 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.7340ms
+ 2023-01-07 22:37:51.597 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-07 22:37:51.707 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.4365ms
+ 2023-01-07 22:37:51.838 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-07 22:37:52.078 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 240.6095ms
+ 2023-01-07 22:40:41.650 +01:00 [] Request starting HTTP/1.1 POST https://localhost:7087/api/companies application/json 310
+ 2023-01-07 22:40:41.657 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 22:40:41.683 +01:00 [] Route matched with {action = "CreateCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(Shared.DataTransferObject.CompanyForCreationDto) on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2023-01-07 22:40:42.778 +01:00 [] Entity Framework Core 6.0.9 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+ 2023-01-07 22:40:43.405 +01:00 [] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 60), @p2='?' (Size = 4000), @p3='?' (Size = 60)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([CompanyId], [Address], [Country], [Name])
+VALUES (@p0, @p1, @p2, @p3);
+ 2023-01-07 22:40:43.420 +01:00 [] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+ 2023-01-07 22:40:43.421 +01:00 [] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+ 2023-01-07 22:40:43.450 +01:00 [] Executing CreatedAtRouteResult, writing value of type 'Shared.DataTransferObject.CompanyDto'.
+ 2023-01-07 22:40:43.499 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation) in 1810.9166ms
+ 2023-01-07 22:40:43.500 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.CreateCompany (tutorial.presentation)'
+ 2023-01-07 22:40:43.508 +01:00 [] Request finished HTTP/1.1 POST https://localhost:7087/api/companies application/json 310 - 201 - application/json;+charset=utf-8 1857.7793ms

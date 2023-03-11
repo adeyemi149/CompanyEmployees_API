@@ -1,0 +1,15 @@
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\bin\Debug\net7.0\Presentation.deps.json
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\bin\Debug\net7.0\Presentation.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\bin\Debug\net7.0\Presentation.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\bin\Debug\net7.0\Service.Contract.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\bin\Debug\net7.0\Service.Contract.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\refint\Presentation.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\Presentation.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\Presentation\obj\Debug\net7.0\ref\Presentation.dll

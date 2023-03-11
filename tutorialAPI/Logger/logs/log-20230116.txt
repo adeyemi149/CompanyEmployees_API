@@ -1,0 +1,34 @@
+ 2023-01-16 20:44:24.026 +01:00 [] Now listening on: https://localhost:7087
+ 2023-01-16 20:44:24.063 +01:00 [] Now listening on: http://localhost:5291
+ 2023-01-16 20:44:24.065 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2023-01-16 20:44:24.065 +01:00 [] Hosting environment: Development
+ 2023-01-16 20:44:24.065 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2023-01-16 20:44:26.243 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger - -
+ 2023-01-16 20:44:26.497 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger - - - 301 0 - 264.4729ms
+ 2023-01-16 20:44:26.572 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2023-01-16 20:44:27.171 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 599.3764ms
+ 2023-01-16 20:44:27.196 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - -
+ 2023-01-16 20:44:27.211 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - -
+ 2023-01-16 20:44:27.211 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - -
+ 2023-01-16 20:44:27.212 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2023-01-16 20:44:27.252 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 39.3270ms
+ 2023-01-16 20:44:27.317 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2023-01-16 20:44:27.317 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - - - 200 143632 text/css 121.0004ms
+ 2023-01-16 20:44:27.349 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2023-01-16 20:44:27.350 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 138.6696ms
+ 2023-01-16 20:44:27.379 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2023-01-16 20:44:27.463 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2023-01-16 20:44:27.464 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 252.5428ms
+ 2023-01-16 20:44:27.531 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 151.4328ms
+ 2023-01-16 20:44:27.801 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - -
+ 2023-01-16 20:44:27.802 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2023-01-16 20:44:27.802 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - - - 200 628 image/png 0.8910ms
+ 2023-01-16 20:44:27.894 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2023-01-16 20:44:28.243 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 349.4477ms
+ 2023-01-16 20:45:10.687 +01:00 [] Request starting HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 99
+ 2023-01-16 20:45:10.694 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-16 20:45:10.753 +01:00 [] Route matched with {action = "PartiallyUpdateEmployeeForCompany", controller = "Employess"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdateEmployeeForCompany(System.Guid, System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Shared.DataTransferObject.EmployeeForUpdateDto]) on controller tutorial.presentation.Controllers.EmployessController (tutorial.presentation).
+ 2023-01-16 20:45:11.924 +01:00 [] Executing BadRequestObjectResult, writing value of type 'System.String'.
+ 2023-01-16 20:45:11.934 +01:00 [] Executed action tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation) in 1175.6819ms
+ 2023-01-16 20:45:11.936 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.EmployessController.PartiallyUpdateEmployeeForCompany (tutorial.presentation)'
+ 2023-01-16 20:45:11.939 +01:00 [] Request finished HTTP/1.1 PATCH https://localhost:7087/api/companies/C9D4C053-49B6-410C-BC78-2D54A9991870/employees/80ABBCA8-664D-4B20-B5DE-024705497D4A application/json 99 - 400 - text/plain;+charset=utf-8 1251.6368ms

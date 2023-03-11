@@ -1,0 +1,144 @@
+ 2022-12-23 17:28:16.847 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-23 17:28:16.918 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger - -
+ 2022-12-23 17:28:16.921 +01:00 [] Hosting environment: Development
+ 2022-12-23 17:28:16.921 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-23 17:28:17.133 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/index.html - -
+ 2022-12-23 17:28:17.153 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger - - - 301 - - 237.3417ms
+ 2022-12-23 17:28:18.256 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/index.html - - - 200 - text/html;charset=utf-8 1123.6399ms
+ 2022-12-23 17:28:18.278 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/swagger-ui.css - -
+ 2022-12-23 17:28:18.286 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/swagger-ui-standalone-preset.js - -
+ 2022-12-23 17:28:18.296 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/swagger-ui-bundle.js - -
+ 2022-12-23 17:28:18.300 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-23 17:28:18.312 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.1699ms
+ 2022-12-23 17:28:18.328 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2022-12-23 17:28:18.328 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2022-12-23 17:28:18.332 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/swagger-ui.css - - - 200 143632 text/css 54.3956ms
+ 2022-12-23 17:28:18.341 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2022-12-23 17:28:18.346 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 60.6881ms
+ 2022-12-23 17:28:18.387 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 86.5860ms
+ 2022-12-23 17:28:18.462 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+ 2022-12-23 17:28:18.695 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 232.5491ms
+ 2022-12-23 17:28:18.821 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/favicon-32x32.png - -
+ 2022-12-23 17:28:18.822 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2022-12-23 17:28:18.823 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/favicon-32x32.png - - - 200 628 image/png 1.6008ms
+ 2022-12-23 17:28:18.929 +01:00 [] Request starting HTTP/2 GET https://localhost:44365/swagger/v1/swagger.json - -
+ 2022-12-23 17:28:19.063 +01:00 [] Request finished HTTP/2 GET https://localhost:44365/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.1446ms
+ 2022-12-23 17:28:43.783 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-23 17:28:43.827 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-23 17:28:43.828 +01:00 [] Hosting environment: Development
+ 2022-12-23 17:28:43.828 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-23 17:28:44.440 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger - -
+ 2022-12-23 17:28:44.615 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger - - - 301 0 - 181.6564ms
+ 2022-12-23 17:28:44.624 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2022-12-23 17:28:44.896 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 271.7807ms
+ 2022-12-23 17:28:44.911 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui.css - -
+ 2022-12-23 17:28:44.915 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-bundle.js - -
+ 2022-12-23 17:28:44.917 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-standalone-preset.js - -
+ 2022-12-23 17:28:44.918 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-23 17:28:44.922 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.3423ms
+ 2022-12-23 17:28:44.976 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2022-12-23 17:28:44.976 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2022-12-23 17:28:44.977 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui.css - - - 200 143632 text/css 66.2218ms
+ 2022-12-23 17:28:44.977 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 60.1440ms
+ 2022-12-23 17:28:44.978 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2022-12-23 17:28:44.978 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 63.6587ms
+ 2022-12-23 17:28:45.115 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2022-12-23 17:28:45.240 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 124.7697ms
+ 2022-12-23 17:28:45.532 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/favicon-32x32.png - -
+ 2022-12-23 17:28:45.533 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2022-12-23 17:28:45.533 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/favicon-32x32.png - - - 200 628 image/png 1.1565ms
+ 2022-12-23 17:28:45.623 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2022-12-23 17:28:45.748 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 125.2227ms
+ 2022-12-23 17:29:00.786 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-23 17:29:00.812 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-23 17:29:00.814 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-23 17:29:00.815 +01:00 [] Hosting environment: Development
+ 2022-12-23 17:29:00.815 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-23 17:29:01.979 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger - -
+ 2022-12-23 17:29:02.114 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger - - - 301 0 - 141.0928ms
+ 2022-12-23 17:29:02.138 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-23 17:29:02.414 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 276.2611ms
+ 2022-12-23 17:29:02.434 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - -
+ 2022-12-23 17:29:02.434 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - -
+ 2022-12-23 17:29:02.435 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - -
+ 2022-12-23 17:29:02.524 +01:00 [] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+ 2022-12-23 17:29:02.524 +01:00 [] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+ 2022-12-23 17:29:02.525 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 90.0064ms
+ 2022-12-23 17:29:02.525 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui.css - - - 200 143632 text/css 90.8167ms
+ 2022-12-23 17:29:02.580 +01:00 [] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+ 2022-12-23 17:29:02.581 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 146.7031ms
+ 2022-12-23 17:29:02.666 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-23 17:29:02.697 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-23 17:29:02.735 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 37.5368ms
+ 2022-12-23 17:29:02.765 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 98.8699ms
+ 2022-12-23 17:29:03.007 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - -
+ 2022-12-23 17:29:03.008 +01:00 [] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+ 2022-12-23 17:29:03.008 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/favicon-32x32.png - - - 200 628 image/png 0.7272ms
+ 2022-12-23 17:29:03.060 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-23 17:29:03.164 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.1461ms
+ 2022-12-23 17:37:53.260 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-23 17:37:53.317 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-23 17:37:53.319 +01:00 [] Hosting environment: Development
+ 2022-12-23 17:37:53.319 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-23 17:37:54.319 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2022-12-23 17:37:54.719 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 407.6363ms
+ 2022-12-23 17:37:54.740 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-23 17:37:54.744 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 3.6623ms
+ 2022-12-23 17:37:54.884 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2022-12-23 17:37:54.949 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.3084ms
+ 2022-12-23 17:37:55.296 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2022-12-23 17:37:55.451 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 155.2578ms
+ 2022-12-23 17:42:17.678 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-23 17:42:17.726 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-23 17:42:17.727 +01:00 [] Hosting environment: Development
+ 2022-12-23 17:42:17.728 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-23 17:42:20.086 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2022-12-23 17:42:20.752 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 683.3804ms
+ 2022-12-23 17:42:20.790 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-23 17:42:20.794 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.0750ms
+ 2022-12-23 17:42:20.949 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2022-12-23 17:42:21.018 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.1103ms
+ 2022-12-23 17:42:21.155 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2022-12-23 17:42:21.291 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.8796ms
+ 2022-12-23 17:42:51.002 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/api/companies - -
+ 2022-12-23 17:42:51.010 +01:00 [] Failed to determine the https port for redirect.
+ 2022-12-23 17:42:51.017 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-23 17:42:51.047 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2022-12-23 17:43:38.670 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-23 17:43:38.725 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-23 17:43:38.727 +01:00 [] Hosting environment: Development
+ 2022-12-23 17:43:38.727 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-23 17:43:40.080 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/index.html - -
+ 2022-12-23 17:43:40.909 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/index.html - - - 200 - text/html;charset=utf-8 849.9713ms
+ 2022-12-23 17:43:40.969 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-23 17:43:40.976 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.2113ms
+ 2022-12-23 17:43:41.172 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/_vs/browserLink - -
+ 2022-12-23 17:43:41.232 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.3748ms
+ 2022-12-23 17:43:41.494 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - -
+ 2022-12-23 17:43:41.679 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.4368ms
+ 2022-12-23 17:43:57.803 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/api/companies - -
+ 2022-12-23 17:43:57.814 +01:00 [] Failed to determine the https port for redirect.
+ 2022-12-23 17:43:57.818 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-23 17:43:57.835 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).
+ 2022-12-23 17:44:24.231 +01:00 [] Executing ObjectResult, writing value of type 'System.String'.
+ 2022-12-23 17:44:24.253 +01:00 [] Executed action tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation) in 26404.3123ms
+ 2022-12-23 17:44:24.255 +01:00 [] Executed endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-23 17:44:24.257 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/api/companies - - - 500 - text/plain;+charset=utf-8 26454.1457ms
+ 2022-12-23 17:51:10.597 +01:00 [] Now listening on: https://localhost:7087
+ 2022-12-23 17:51:10.650 +01:00 [] Now listening on: http://localhost:5291
+ 2022-12-23 17:51:10.654 +01:00 [] Application started. Press Ctrl+C to shut down.
+ 2022-12-23 17:51:10.654 +01:00 [] Hosting environment: Development
+ 2022-12-23 17:51:10.654 +01:00 [] Content root path: C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorialAPI
+ 2022-12-23 17:51:11.890 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+ 2022-12-23 17:51:12.326 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 440.7253ms
+ 2022-12-23 17:51:12.369 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+ 2022-12-23 17:51:12.378 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.8264ms
+ 2022-12-23 17:51:12.625 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+ 2022-12-23 17:51:12.711 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.9731ms
+ 2022-12-23 17:51:13.023 +01:00 [] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+ 2022-12-23 17:51:13.167 +01:00 [] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.7896ms
+ 2022-12-23 17:51:19.695 +01:00 [] Request starting HTTP/1.1 GET http://localhost:5291/api/companies - -
+ 2022-12-23 17:51:19.710 +01:00 [] Request finished HTTP/1.1 GET http://localhost:5291/api/companies - - - 307 0 - 14.9847ms
+ 2022-12-23 17:51:19.735 +01:00 [] Request starting HTTP/1.1 GET https://localhost:7087/api/companies - -
+ 2022-12-23 17:51:19.743 +01:00 [] Executing endpoint 'tutorial.presentation.Controllers.CompaniesController.GetCompanies (tutorial.presentation)'
+ 2022-12-23 17:51:19.759 +01:00 [] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller tutorial.presentation.Controllers.CompaniesController (tutorial.presentation).

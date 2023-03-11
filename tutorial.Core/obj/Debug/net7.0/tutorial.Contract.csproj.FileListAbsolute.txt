@@ -1,0 +1,17 @@
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Contract.deps.json
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Contract.runtimeconfig.json
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Contract.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Contract.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\refint\tutorial.Contract.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.genruntimeconfig.cache
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\ref\tutorial.Contract.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Entities.dll
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\bin\Debug\net7.0\tutorial.Entities.pdb
+C:\Users\DELL\OneDrive\Desktop\ApiProjects\Tutorial\tutorialAPI\tutorial.Core\obj\Debug\net7.0\tutorial.Contract.csproj.CopyComplete
